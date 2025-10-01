@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Navdonar from '../../components/Navdonar'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import Constants from '../../constants'
 export default function Donarview() {
 
     const dele = (foodid) => {
@@ -23,7 +24,10 @@ export default function Donarview() {
     useEffect(() => {
         axios.get(`http://127.0.0.1:8000/api/donarfoodview/${donarid}`).then((response) => {
             console.log(response);
-            setState(response.data.data)
+            if(response.data.success==1){
+
+                setState(response.data.data)
+            }
 
         }).catch((error) => { console.log(error); })
     }, [])
@@ -45,12 +49,12 @@ export default function Donarview() {
                     <div className="col-3">
                         <div className="card-z">
 
-                            {state[0] ?
+                            {state && state?.length>0 ?
                                 <>
                                     {state?.map((data) => (
                                         <div>
 
-                                            <img src={`/donation/${data.image}`} class="card-z-img-top" />
+                                            <img src={`${Constants.port}${data.image}`} class="card-z-img-top" />
                                             <h6>Food name:{data.foodname}</h6>
                                             <h6>Food type:{data.foodtype}</h6>
                                             <h6>Quantity:{data.quantity}</h6>
