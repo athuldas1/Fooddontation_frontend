@@ -1,0 +1,77 @@
+
+.containerdon{
+    width: 100%;
+    height: auto;
+}
+
+
+.containerdon img{
+    width: 50%;
+    height: auto;
+    position:absolute;
+    margin-left: 50%;
+
+
+}
+.dpara {
+    max-width: 45%;
+    height: auto;
+    position: relative;
+    /* bottom: 40%; */
+    top: 20px;
+    
+
+}
+.dpara h1{
+    color: black;
+    font-style: italic;
+}
+.dpara h1:hover{
+    -webkit-text-stroke: 2px #060505;
+    color: transparent;
+}
+.dpara h1{
+    color: #0f0f0f;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.dpara p{
+    color: black;
+}
+
+.donarcard{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 25px;
+    position: absolute;
+    bottom: 0;
+    top: 550px;
+    
+    
+}
+@media only screen and (max-width: 600px) {
+    .donarcard{
+        position: relative;
+        top: 50%;
+    }
+
+  }
+
+
+.do{
+    position: relative;
+    bottom: 10px;
+    width: 30%;
+}
+.fom{
+    width: fit-content;
+    height: auto;
+    text-align: right;
+}
+
+

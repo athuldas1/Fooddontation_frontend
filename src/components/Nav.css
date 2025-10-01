@@ -1,0 +1,7 @@
+.container-fluid span{
+    color: red;
+}
+.navbar-brand{
+    font-style: oblique;
+    font-weight: 600;
+}

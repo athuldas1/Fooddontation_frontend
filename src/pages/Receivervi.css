@@ -1,0 +1,39 @@
+.card-z {
+    /* border-radius: 30px !important; */
+    background-color: rgb(249, 246, 246) !important;
+    /* padding: 20px 20px 0 20px !important; */
+    border: 1px solid rgb(155, 149, 149) !important;
+    position: absolute;
+    top: 20%;
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .card-z h6 {
+        position: relative;
+        top: 50%;
+    }
+
+}
+
+
+
+
+.row-s {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.card-z-img-top {
+    height: 30vh;
+    width: 100%;
+
+}
+

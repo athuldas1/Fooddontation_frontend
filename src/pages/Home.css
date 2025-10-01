@@ -1,0 +1,90 @@
+.carousel-item img{
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-inner p{
+    color: white;
+}
+
+.backbody{
+   /* background-color: rgb(107, 104, 104); */
+    /* background: linear-gradient(#80FFDB, #64DFDF, #48BFE3, #5390D9, #5E60CE); */
+    height:auto;
+    width: 100%;
+    border: 3px solid rgb(31, 31, 31);
+    border-radius: 40px;
+}
+p{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #101010;
+    font-weight: 600;
+
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: #040404;
+    font-weight: 500;
+}
+.third{
+    width: 100%;;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+.third img{
+    border-radius: 25px 25px 25px 25px;
+}
+
+
+
+.card{
+    border-radius: 50px;
+    width: 18rem;
+}
+
+.coo{
+    height: auto;
+    width: 50%;
+    text-align: center;
+    position: absolute;
+    left: 27%;
+    background-color: rgb(148, 146, 146);
+    border: 3px solid rgb(50, 44, 44);
+    border-radius: 20px;
+    
+}
+.coo .pp{
+    text-align: center;
+
+}
+.coo h2{
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #030303;
+}
+
+.logo{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 45%;
+}
+.backbody h1:hover{
+    -webkit-text-stroke: 2px #0f0f0f;
+    color: transparent;
+}
+.backbody h1{
+    color: #0a0a0a;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 85px;
+    margin-bottom: 25px;
+    transition: 0.5s;
+
+}
